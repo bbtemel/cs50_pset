@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>Hello!</title>
+    </head>
+    <body>
+        <button id="Red">R</button>
+        <button id="Green">G</button>
+        <button id="Blue">B</button>
+         <script>
+         let body=document.querySelector("body");
+            document.querySelector("#Red").onclick = function(){
+                body.style.backgroundColor = "red";
+            }
+            document.querySelector("#Green").onclick = function(){
+                body.style.backgroundColor = "green";
+            }
+            document.querySelector("#Blue").onclick = function(){
+                body.style.backgroundColor = "blue";
+            }
+
+        </script>
+    </body>
+</html>

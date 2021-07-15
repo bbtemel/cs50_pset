@@ -1,0 +1,596 @@
+
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class=" is-full hasPageActions hasBreadcrumb  has-default-focus theme-light" lang="en-us" dir="ltr" data-css-variable-support="true" data-authenticated="false" data-auth-status-determined="false" data-target="docs" x-ms-format-detection="none">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta property="og:title" content="Introduction - Learn" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.microsoft.com/en-us/learn/modules/csharp-call-methods/1-introduction" />
+			<meta property="og:description" content="Quick overview of the goals of this module." />
+		<meta property="og:image" content="https://docs.microsoft.com/en-us/media/logos/logo-ms-social.png" />
+		<meta property="og:image:alt" content="Microsoft Logo" />
+
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@docsmsft" />
+
+
+	<meta name="uid" content="learn.languages.csharp-call-methods.introduction" />
+<meta name="page_type" content="learn" />
+<meta name="page_kind" content="unit" />
+<meta name="azure_sandbox" content="false" />
+<meta name="author" content="bobtabor-msft" />
+<meta name="breadcrumb_path" content="/learn/breadcrumb/toc.json" />
+<meta name="clicktale" content="true" />
+<meta name="depot_name" content="Docs.learn-pr" />
+<meta name="description" content="Quick overview of the goals of this module." />
+<meta name="document_id" content="fe7eaa69-bb5b-83f6-470f-1ccf1b6eb82c" />
+<meta name="document_version_independent_id" content="9bb828ee-a2c8-ada9-5174-986f63ddd287" />
+<meta name="gitcommit" content="https://github.com/MicrosoftDocs/learn-pr/blob/6b49d7df1dc18aa106f454d9da4ca902fa89d205/learn-pr/language/csharp-call-methods/1-introduction.yml" />
+<meta name="locale" content="en-us" />
+<meta name="localization_scopes" content="de-de" />
+<meta name="localization_scopes" content="es-es" />
+<meta name="localization_scopes" content="fr-fr" />
+<meta name="localization_scopes" content="it-it" />
+<meta name="localization_scopes" content="ru-ru" />
+<meta name="localization_scopes" content="pt-br" />
+<meta name="localization_scopes" content="ja-jp" />
+<meta name="localization_scopes" content="ko-kr" />
+<meta name="localization_scopes" content="zh-cn" />
+<meta name="localization_scopes" content="zh-tw" />
+<meta name="localization_scopes" content="cs-cz" />
+<meta name="localization_scopes" content="hu-hu" />
+<meta name="localization_scopes" content="nl-nl" />
+<meta name="localization_scopes" content="pl-pl" />
+<meta name="localization_scopes" content="pt-pt" />
+<meta name="localization_scopes" content="tr-tr" />
+<meta name="localization_scopes" content="sv-se" />
+<meta name="ms.author" content="rotabor" />
+<meta name="ms.date" content="09/17/2019" />
+<meta name="ms.prod" content="learning-azure" />
+<meta name="ms.topic" content="interactive-tutorial" />
+<meta name="original_content_git_url" content="https://github.com/MicrosoftDocs/learn-pr/blob/live/learn-pr/language/csharp-call-methods/1-introduction.yml" />
+<meta name="search.ms_docsetname" content="learn-pr" />
+<meta name="search.ms_product" content="Docs" />
+<meta name="search.ms_sitename" content="Docs" />
+<meta name="site_name" content="Docs" />
+<meta name="uhfHeaderId" content="MSDocsHeader-Learn" />
+<meta name="updated_at" content="2020-05-29 11:05 PM" />
+<meta name="unit_completion_type" content="view" />
+<meta name="ROBOTS" content="noindex" />
+
+
+<link href="https://docs.microsoft.com/en-us/learn/modules/csharp-call-methods/1-introduction" rel="canonical">
+	<title>Introduction - Learn | Microsoft Docs</title>
+
+		<link rel="stylesheet" href="/_themes/docs.theme/master/en-us/_themes/styles/1c983901.site-ltr.css ">
+
+	<link rel="stylesheet" href="/_themes/docs.theme/master/en-us/_themes/styles/bf60a3.moduleunitpage.css ">
+
+
+	<script>
+	var msDocs = {
+		data: {
+			timeOrigin: Date.now(),
+			contentLocale: 'en-us',
+			contentDir: 'ltr',
+			userLocale: 'en-us',
+			userDir: 'ltr',
+			pageTemplate: 'ModuleUnit',
+			brand: '',
+			context: {
+
+			},
+			hasBinaryRating: false,
+			hasGithubIssues: false,
+			showFeedbackReport: false,
+			enableTutorialFeedback: false,
+			feedbackSystem: 'GitHub',
+			feedbackGitHubRepo: 'MicrosoftDocs/learn',
+			feedbackProductUrl: '',
+			contentGitUrl: 'https://github.com/MicrosoftDocs/learn/blob/master/learn-pr/language/csharp-call-methods/1-introduction.yml',
+			extendBreadcrumb: false,
+			isEditDisplayable: false,
+			hideViewSource: false,
+			hasPageActions: true,
+			hasBookmark: true,
+			hasShare: false
+		},
+		functions:{}
+	};
+	</script>
+	<script nomodule src="/static/third-party/bluebird/3.5.0/bluebird.min.js" integrity="sha384-aD4BDeDGeLXLpPK4yKeqtZQa9dv4a/7mQ+4L5vwshIYH1Mc2BrXvHd32iHzYCQy5" crossorigin="anonymous"></script>
+	<script nomodule src="/static/third-party/fetch/3.0.0/fetch.umd.min.js" integrity="sha384-EQIXrC5K2+7X8nGgLkB995I0/6jfAvvyG1ieZ+WYGxgJHFMD/alsG9fSDWvzb5Y1" crossorigin="anonymous"></script>
+	<script nomodule src="/static/third-party/template/1.4.0/template.min.js" integrity="sha384-1zKzI6ldTVHMU7n0W2HpE/lhHI+UG4D9IIaxbj3kT2UhCWicdTuJkTtnKuu0CQzN" crossorigin="anonymous"></script>
+	<script nomodule src="/static/third-party/url/0.5.7/url.min.js" integrity="sha384-vn7xBMtpSTfzaTRWxj0kVq0UcsbBrTOgZ/M1ISHqe1V358elYva+lfiEC+T8jLPc" crossorigin="anonymous"></script>
+	<script src="/_themes/docs.theme/master/en-us/_themes/scripts/298d06f8.index-polyfills.js"></script>
+		<script src="/_themes/docs.theme/master/en-us/_themes/scripts/bc32eec0.index-docs.js"></script>
+</head>
+
+<body lang="en-us" dir="ltr">
+<div class="header-holder has-default-focus">
+	<a href="#main" class="skip-to-main-link has-outline-color-text visually-hidden-until-focused is-fixed has-inner-focus focus-visible has-top-zero has-left-zero has-right-zero has-padding-medium has-text-centered has-body-background-medium" tabindex="1">Skip to main content</a>
+	<div hidden id="cookie-consent-holder"></div>
+	<!-- liquid-tag banners global -->
+	<div id="headerAreaHolder" data-bi-name="header">
+<header role="banner" itemscope="itemscope" itemtype="http://schema.org/Organization">
+	<div class="nav-bar">
+		<div class="nav-bar-brand">
+			<a itemprop="url" href="https://www.microsoft.com" aria-label="Microsoft" class="nav-bar-button">
+				<div class="nav-bar-logo has-background-image theme-display is-light" role="presentation" aria-hidden="true" itemprop="logo" itemscope="itemscope"></div>
+				<div class="nav-bar-logo has-background-image theme-display is-dark is-high-contrast" role="presentation" aria-hidden="true" itemprop="logo" itemscope="itemscope"></div>
+			</a>
+		</div>
+	</div>
+	<div class="nav-bar has-border-top is-hidden-mobile"></div>
+</header>	</div>
+
+				<div class="content-header uhf-container has-padding has-default-focus has-border-bottom-none" data-bi-name="content-header">
+				<nav class="has-padding-none has-padding-left-medium-tablet has-padding-right-medium-tablet has-padding-left-none-uhf-tablet has-padding-left-none-uhf-tablet has-padding-none-desktop has-flex-grow" data-bi-name="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList" role="navigation" aria-label="Breadcrumb">
+					<ul id="page-breadcrumbs" class="breadcrumbs">
+					</ul>
+				</nav>
+			<div class="content-header-controls">
+				<button type="button" class="contents-button button" data-bi-name="contents-expand" aria-haspopup="true">
+					<span class="icon"><span class="docon docon-menu" aria-hidden="true"></span></span>
+					<span class="contents-expand-title">Contents</span>
+				</button>
+				<button type="button" class="ap-collapse-behavior ap-expanded button" data-bi-name="ap-collapse" aria-controls="action-panel">
+					<span class="icon"><span class="docon docon-exit-mode" aria-hidden="true"></span></span>
+					<span>Exit focus mode</span>
+				</button>
+			</div>
+			<div class="has-padding-none-tablet has-padding-medium is-size-small is-flex-touch has-flex-justify-content-space-between-touch has-flex-grow">
+				<ul class="is-hidden-mobile action-list has-flex-justify-content-start has-flex-justify-content-end-tablet is-flex is-flex-row has-flex-wrap has-flex-grow is-unstyled">
+					<li>
+						<button type="button" class="bookmark button is-text has-inner-focus is-small is-icon-only-touch" data-list-type="bookmarks" data-bi-name="bookmark" title="Bookmark this page">
+							<span class="icon" aria-hidden="true">
+								<span class="docon docon-single-bookmark"></span>
+							</span>
+							<span class="bookmark-status is-visually-hidden-touch is-hidden-portrait">Bookmark</span>
+						</button>
+					</li>
+				</ul>
+				<button type="button" class="has-border contents-button button is-small is-text is-hidden-tablet has-inner-focus" aria-label="Contents" data-bi-name="contents-expand">
+					<span class="icon">
+						<span class="docon docon-editor-list-bullet" aria-hidden="true"></span>
+					</span>
+					<span class="contents-expand-title">Table of contents</span>
+				</button>
+				<div class="is-invisible"></div>
+				<div class="is-hidden-tablet level-item is-flexible level-right">
+					<button type="button" class="page-actions-button button is-small is-text is-hidden-tablet has-inner-focus has-border is-full-height  has-margin-left-small" aria-label="Page Actions" data-bi-name="pageactions">
+						<span class="icon">
+							<span class="docon docon-more-vertical" aria-hidden="true"></span>
+						</span>
+					</button>
+				</div>
+			</div>
+		</div>
+
+
+
+	<div id="disclaimer-holder" class="has-overflow-hidden has-default-focus">
+		<!-- liquid-tag banners sectional -->
+	</div>
+	</div>
+
+	<div class="mainContainer  uhf-container has-body-background-dark uhf-container is-full  has-default-focus" data-bi-name="body">
+
+		<div class="columns has-large-gaps is-gapless-mobile  is-gapless">
+
+
+			<section class="primary-holder column  is-full ">
+				<div class="columns is-gapless-mobile has-large-gaps  is-gapless">
+
+
+				<div id="main-column" class="column  is-full ">
+
+					<main id="main" role="main" class="content " data-bi-name="content" lang="en-us" dir="ltr">
+
+
+<div class="modular-content-container" data-target="docs">
+    <nav class="pagination is-centered is-wide" role="navigation" aria-label="pagination" data-bi-name="module-nav">
+        <a class="is-invisible pagination-previous button is-text has-text-primary is-undecorated is-hidden-portrait has-inner-focus" data-bi-name="previous-unit" id="previous-unit-link">
+            <span aria-hidden="true" class="icon docon docon-chevron-left-light"></span>
+            <span>Previous</span>
+        </a>
+        <ul class="pagination-list">
+            <li class="dropdown has-centered-menu has-caret" data-bi-name="unit-menu">
+                <button aria-controls="module-menu" aria-expanded="false" class="pagination-link has-margin-auto-sides button is-text is-undecorated is-small dropdown-trigger" data-bi-name="dropdown-trigger" title="Module menu">
+                    <span id="unit-place"></span>
+                    <span aria-hidden="true" class="icon">
+                        <span class="docon docon-chevron-down-light expanded-indicator"></span>
+                    </span>
+                </button>
+                <div class="dropdown-menu has-width-450" id="module-menu" role="menu"></div>
+            </li>
+        </ul>
+        <a class="is-invisible pagination-next button is-text has-text-primary is-undecorated is-hidden-portrait has-inner-focus" data-bi-name="next-unit" id="next-unit-link">
+            <span>Next</span>
+            <span aria-hidden="true" class="icon docon docon-chevron-right-light"></span>
+        </a>
+    </nav>
+</div>
+<div class="columns is-mobile is-gapless is-fixed-bottom is-hidden-tablet is-hidden-landscape has-body-background has-margin-none" id="mobile-nav">
+    <div class="column is-hidden" id="previous-unit-link-mobile-col">
+        <a class="button is-fullwidth is-tertiary is-radiusless is-large has-margin-none has-inner-focus" data-bi-name="previous-unit" id="previous-unit-link-mobile">
+            <span aria-hidden="true" class="icon docon docon-chevron-left-light"></span>
+            <span>Previous</span>
+        </a>
+    </div>
+    <div class="column is-hidden" id="next-unit-link-mobile-col">
+        <a class="button is-fullwidth is-primary is-radiusless is-large has-margin-none has-inner-focus" data-bi-name="next-unit" id="next-unit-link-mobile">
+            <span>Next</span>
+            <span aria-hidden="true" class="icon docon docon-chevron-right-light"></span>
+        </a>
+    </div>
+</div>
+
+
+
+
+						<!-- <content> -->
+							<div class="modular-content-container has-body-background box">
+	<div id="unit-inner-section" class="section is-uniform is-relative">
+		<h1 class="has-margin-right-super-large-desktop">Introduction</h1>
+		<ul class="metadata page-metadata">
+			<li>1 minute</li>
+		</ul>
+			<p>The C# programming language is supplemented by a large library of functionality that enables you to create desktop or web applications, access data in files or on the internet, perform advanced mathematical operations, and much more.  Understanding how to navigate this library of functionality is a critical skill that will help you build feature-rich applications more quickly.</p>
+<p>Suppose you need to generate a few random numbers that correspond to a subset of files on your hard drive containing data so you can sample the data and return an approximate result without analyzing all the data files.  How can you generate a random number?  Is this supported by C#?  If so, how can you write code to limit the random number, generate it, and retrieve the result?</p>
+<p>In this module, you'll write code that calls methods in the .NET Class Library.  You'll learn why methods are designed and implemented differently across the .NET Class Library.  Most importantly, you'll write code to pass information into methods and retrieve information returned by methods.  Finally, you'll use built-in tools and online documentation to help you gather information about the methods you want to work with.</p>
+<p>By the end of this module, you'll know how to find and use methods on classes in the .NET Class Library to help you perform many common tasks.</p>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<p>In this module, you will:</p>
+<ul>
+<li>Write code that calls stateless methods in the .NET Class Library</li>
+<li>Create a new instance of .NET Class Library classes to call methods that maintain state</li>
+<li>Use Intellisense to learn more about a method, including its overloaded versions, its return value type, and its input parameter data types</li>
+<li>Use docs.microsoft.com to research what a method does, its overloaded versions, its return value type, its input parameters and what each parameter represents, and more</li>
+</ul>
+<h2 id="prerequisites">Prerequisites:</h2>
+<ul>
+<li>Experience declaring, initializing, setting, and retrieving values in variables</li>
+<li>Experience using the basic C# data types including <code>int</code> and <code>string</code></li>
+<li>Experience using the method <code>Console.WriteLine()</code></li>
+</ul>
+
+		<div id="next-section" class="modular-content-container is-hidden is-hidden-portrait">
+			<p id="next-module" class="has-margin-top-none"></p>
+			<p>
+				<a href="/en-us/" class="button is-primary" data-linktype="absolute-path">
+				<span>Continue </span>
+				<span class="docon docon-chevron-right-light"></span>
+				</a>
+			</p>
+		</div>
+		<div data-progress-uid="learn.languages.csharp-call-methods.introduction" class="xp-tag is-absolute has-top-zero has-right-zero has-margin-top-medium has-margin-top-large-tablet has-margin-top-extra-large-desktop has-margin-top-medium-interactive has-margin-right-large has-margin-right-extra-large-tablet has-margin-right-large-interactive">
+			<div class="xp-tag-hexagon">
+				<span class="xp-tag-icon is-shown-complete docon docon-check"></span>
+				<span aria-hidden="true" class="xp-tag-xp"></span>
+			</div>
+		</div>
+	</div>
+</div>
+
+						<!-- </content> -->
+
+						</main>
+
+						<!-- page rating section -->
+						<!-- end page rating section -->
+
+<div class="modular-content-container has-margin-top-medium has-margin-bottom-medium">
+	<section class="feedback-section section is-full-height is-uniform has-padding-top-none has-padding-bottom-none is-relative">
+		<p class="has-text-weight-semibold">
+Need help? See our <a id="troubleshooting-guide" class="has-text-primary" data-bi-name="troubleshooting">troubleshooting guide</a> or provide specific feedback by <a id="module-unit-feedback-link" class="has-text-primary" data-bi-name="feedback">reporting an issue</a>.		</p>
+	</section>
+</div>
+
+						<!-- feedback section -->
+
+						<!-- end feedback section -->
+
+						<!-- feedback report section -->
+						<!-- end feedback report section -->
+
+						<div class="footerContainer is-visible-interactive has-default-focus  has-border-top has-margin-none">
+
+
+
+	<footer id="footer-interactive" data-bi-name="footer" class="footer-layout">
+
+    <div class="is-flex is-full-height has-padding-right-extra-large-desktop">
+			<a data-mscc-ic="false" class="locale-selector-link has-flex-shrink-none" href="#" data-bi-name="select-locale"><span class="icon docon docon-world is-size-large has-margin-right-small" aria-hidden="true"></span><span class="local-selector-link-text"></span></a>
+		<div class="has-margin-left-medium has-margin-right-medium has-flex-shrink-none">
+<div class="dropdown has-caret-up">
+	<button class="dropdown-trigger button is-transparent is-small is-icon-only-touch has-inner-focus theme-dropdown-trigger"
+		aria-controls="theme-menu-interactive" aria-expanded="false" title="Theme" data-bi-name="theme">
+		<span class="icon">
+			<span class="docon docon-sun" aria-hidden="true"></span>
+		</span>
+		<span>Theme</span>
+	</button>
+	<div class="dropdown-menu" id="theme-menu-interactive" role="menu">
+		<ul class="theme-selector has-padding-small">
+			<li class="theme is-block">
+				<button class="button is-text is-small theme-control is-fullwidth has-flex-justify-content-start"
+					data-theme-to="light">
+					<span class="theme-light has-margin-right-small">
+						<span
+							class="theme-selector-icon css-variable-support has-border is-inline-block has-body-background"
+							aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background" />
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+							</svg>
+						</span>
+					</span>
+					<span role="menuitem">
+Light					</span>
+				</button>
+			</li>
+			<li class="theme is-block">
+				<button class="button is-text is-small theme-control is-fullwidth has-flex-justify-content-start"
+					data-theme-to="dark">
+					<span class="theme-dark has-margin-right-small">
+						<span
+							class="has-border theme-selector-icon css-variable-support is-inline-block has-body-background"
+							aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background" />
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+							</svg>
+						</span>
+					</span>
+					<span role="menuitem">
+Dark					</span>
+				</button>
+			</li>
+			<li class="theme is-block">
+				<button class="button is-text is-small theme-control is-fullwidth has-flex-justify-content-start"
+					data-theme-to="high-contrast">
+					<span class="theme-high-contrast has-margin-right-small">
+						<span
+							class="has-border theme-selector-icon css-variable-support is-inline-block has-body-background"
+							aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background" />
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+							</svg>
+						</span>
+					</span>
+					<span role="menuitem">
+High contrast					</span>
+				</button>
+			</li>
+		</ul>
+	</div>
+</div>		</div>
+	</div>
+    <ul class="links" data-bi-name="footerlinks">
+		<li class="manage-cookies-holder" hidden></li>
+			<li><a data-mscc-ic="false" href="https://docs.microsoft.com/en-us/previous-versions/" data-bi-name="archivelink">Previous Version Docs</a></li>
+			<li><a data-mscc-ic="false" href="https://docs.microsoft.com/en-us/teamblog" data-bi-name="bloglink">Blog</a></li>
+			<li><a data-mscc-ic="false" href="https://docs.microsoft.com/en-us/contribute" data-bi-name="contributorGuide">Contribute</a></li>
+				<li><a data-mscc-ic="false" href="https://go.microsoft.com/fwlink/?LinkId=521839" data-bi-name="privacy">Privacy &amp; Cookies</a></li>
+			<li><a data-mscc-ic="false" href="https://docs.microsoft.com/en-us/legal/termsofuse" data-bi-name="termsofuse">Terms of Use</a></li>
+			<li><a data-mscc-ic="false" href="https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/EN-US.aspx" data-bi-name="trademarks">Trademarks</a></li>
+		<li>&copy; Microsoft 2020</li>
+    </ul>
+</footer>
+						</div>
+					</div>
+
+
+					<!--end of div.columns -->
+				</div>
+
+			<!--end of .primary-holder -->
+			</section>
+
+			<aside id="interactive-container" class="interactive-container is-visible-interactive column has-body-background-dark ">
+			</aside>
+		</div>
+
+		<!--end of .mainContainer -->
+	</div>
+
+	<div id="openFeedbackContainer" class="openfeedback-container"></div>
+
+	<div class="footerContainer has-default-focus is-hidden-interactive  has-border-top has-margin-none">
+
+
+
+	<footer id="footer" data-bi-name="footer" class="footer-layout uhf-container has-padding" role="contentinfo">
+
+    <div class="is-flex is-full-height has-padding-right-extra-large-desktop">
+			<a data-mscc-ic="false" class="locale-selector-link has-flex-shrink-none" href="#" data-bi-name="select-locale"><span class="icon docon docon-world is-size-large has-margin-right-small" aria-hidden="true"></span><span class="local-selector-link-text"></span></a>
+		<div class="has-margin-left-medium has-margin-right-medium has-flex-shrink-none">
+<div class="dropdown has-caret-up">
+	<button class="dropdown-trigger button is-transparent is-small is-icon-only-touch has-inner-focus theme-dropdown-trigger"
+		aria-controls="theme-menu" aria-expanded="false" title="Theme" data-bi-name="theme">
+		<span class="icon">
+			<span class="docon docon-sun" aria-hidden="true"></span>
+		</span>
+		<span>Theme</span>
+	</button>
+	<div class="dropdown-menu" id="theme-menu" role="menu">
+		<ul class="theme-selector has-padding-small">
+			<li class="theme is-block">
+				<button class="button is-text is-small theme-control is-fullwidth has-flex-justify-content-start"
+					data-theme-to="light">
+					<span class="theme-light has-margin-right-small">
+						<span
+							class="theme-selector-icon css-variable-support has-border is-inline-block has-body-background"
+							aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background" />
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+							</svg>
+						</span>
+					</span>
+					<span role="menuitem">
+Light					</span>
+				</button>
+			</li>
+			<li class="theme is-block">
+				<button class="button is-text is-small theme-control is-fullwidth has-flex-justify-content-start"
+					data-theme-to="dark">
+					<span class="theme-dark has-margin-right-small">
+						<span
+							class="has-border theme-selector-icon css-variable-support is-inline-block has-body-background"
+							aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background" />
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+							</svg>
+						</span>
+					</span>
+					<span role="menuitem">
+Dark					</span>
+				</button>
+			</li>
+			<li class="theme is-block">
+				<button class="button is-text is-small theme-control is-fullwidth has-flex-justify-content-start"
+					data-theme-to="high-contrast">
+					<span class="theme-high-contrast has-margin-right-small">
+						<span
+							class="has-border theme-selector-icon css-variable-support is-inline-block has-body-background"
+							aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background" />
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+							</svg>
+						</span>
+					</span>
+					<span role="menuitem">
+High contrast					</span>
+				</button>
+			</li>
+		</ul>
+	</div>
+</div>		</div>
+	</div>
+    <ul class="links" data-bi-name="footerlinks">
+		<li class="manage-cookies-holder" hidden></li>
+			<li><a data-mscc-ic="false" href="https://docs.microsoft.com/en-us/previous-versions/" data-bi-name="archivelink">Previous Version Docs</a></li>
+			<li><a data-mscc-ic="false" href="https://docs.microsoft.com/en-us/teamblog" data-bi-name="bloglink">Blog</a></li>
+			<li><a data-mscc-ic="false" href="https://docs.microsoft.com/en-us/contribute" data-bi-name="contributorGuide">Contribute</a></li>
+				<li><a data-mscc-ic="false" href="https://go.microsoft.com/fwlink/?LinkId=521839" data-bi-name="privacy">Privacy &amp; Cookies</a></li>
+			<li><a data-mscc-ic="false" href="https://docs.microsoft.com/en-us/legal/termsofuse" data-bi-name="termsofuse">Terms of Use</a></li>
+			<li><a data-mscc-ic="false" href="https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/EN-US.aspx" data-bi-name="trademarks">Trademarks</a></li>
+		<li>&copy; Microsoft 2020</li>
+    </ul>
+</footer>
+	</div>
+
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+				showMathMenu: false,
+				showMathMenuMSIE: false,
+				tex2jax: {
+					inlineMath: [['$','$'], ['\\(','\\)']],
+					processEscapes: true
+				}
+			});
+			MathJax.Hub.Register.StartupHook("End", function () {
+				document.documentElement.classList.add('mathjax-complete');
+			});
+		</script>
+		<script src="/static/third-party/MathJax/2.7.2/MathJax.js?config=TeX-AMS_CHTML" integrity="sha384-RLsAi7wiVvnmHrRjlVvUjU45C0bfsIBg6Gsxue6azjJi+lA5q5uK+XbGzO3yn5g1" crossorigin="anonymous"></script>
+	<div id="action-panel" role="region" aria-label="Action Panel" class="action-panel has-default-focus" tabindex="-1"></div>
+	<span id="adobe-target-experiment-container" hidden></span>
+</body>
+</html>

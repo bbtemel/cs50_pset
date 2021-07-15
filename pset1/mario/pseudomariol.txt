@@ -1,0 +1,4 @@
+1.Create do-while loop to get height from the user
+2.Create a for loop nested in for loop
+3.print spaces in nested for that enumarates to height - 1
+4.print hashes in outer for loop

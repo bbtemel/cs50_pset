@@ -1,0 +1,22 @@
+.title
+{
+    text-align:center;
+
+}
+.white
+{
+    color:white;
+}
+table
+{
+    border: 1px solid white;
+    color:white;
+    border-collapse:collapse;
+
+}
+td
+{
+    border: 1px solid white;
+    padding: 6px;
+
+}

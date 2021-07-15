@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Stock Quote
+{% endblock %}
+
+{% block main %}
+    {% if not stocks %}
+            <h4>You have no shares. Go <a href="/buy">buy</a> some!</h4>
+    {% endif %}
+    <div class="container">
+        <table class="table">
+            <tr>
+                <th>Company</th>
+                <th>Symbol</th>
+                <th>Quantity</th>
+                <th>PPS</th>
+                <th>CPPS</th>
+                <th>TSV</th>
+                <th>CSV</th>
+                <th>Profit</th>
+                <th></th>
+            </tr>
+            {% for i in stocks %}
+                <tr>
+                    <td>{{ i["company"] }}</td>
+                    <td>{{ i["stock"] }}</td>
+                    <td>{{ i["quantity"] }}</td>
+                    <td>{{ i["pps"] }}</td>
+                    <td>{{ i["cur_price"] }}</td>
+                    <td>{{ i["total"] }}</td>
+                    <td>{{ i["cur_total"] }}</td>
+                    <td>{{ i["profit"] }}</td>
+                    
+                </tr>
+            {% endfor %}
+            <tr>
+                <td>Available cash:</td>
+                <td></td>
+                <td></td>
+                <td>{{ cash }}</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>Portfolio value:</strong></td>
+                <td></td>
+                <td></td>
+                <td>{{ grand_total }}</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <script src="{{url_for('static', filename='button.js')}}"></script>
+{% endblock %}
